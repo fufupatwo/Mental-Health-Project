@@ -3,6 +3,59 @@ html {
   width: 100%;
 }
 
+/* Header ruleset */
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  background-color: #0099cc;
+  padding-top: 20px;
+  /* Add spacing at the top of the header */
+  margin-bottom: 20px;
+  /* Add spacing at the bottom of the header */
+}
+
+#header-left {
+  float: left;
+  width: 35%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+#header-right {
+  float: right;
+  width: 65%;
+  /* Set the width to 65% (100% - 35%) */
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+#header-img {
+  max-width: 100%;
+  width: 500px;
+  /* Define the width of your image */
+  margin-left: 10px;
+  /* Add left margin around the image */
+  margin-right: 10px;
+  /* Add right margin around the image */
+}
+
+.header-button {
+  background-color: #008CBA;
+  border: 2px solid #0077cc;
+  /* Add a border with color */
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 20px;
+
+  margin: 5px;
+
+  cursor: pointer;
+
+}
+
 .main-title {
   font-family: Arial, sans-serif;
   font-size: 32px;
@@ -16,7 +69,6 @@ body {
   background-color: white;
   background-image: url('');
 
-  /* Customize the font, size, and color for text*/
   font-family: Arial;
   font-size: 16px;
   color: black;
@@ -71,30 +123,22 @@ a {}
 
 a:link {
   text-decoration: none;
-  /* Remove the underline by default */
   color: #0077cc;
-  /* Set the default link color */
 }
 
 a:visited {
   text-decoration: none;
-  /* Remove the underline for visited links */
   color: #551a8b;
-  /* Set the color for visited links */
 }
 
 a:hover {
   text-decoration: underline;
-  /* Add an underline on hover */
   color: #ff6600;
-  /* Set the hover color */
 }
 
 a:active {
   text-decoration: underline;
-  /* Add an underline when the link is active */
   color: #ff0000;
-  /* Set the active (click) color */
 }
 
 /*
@@ -132,14 +176,6 @@ button {
 
 /* Select and style elements by class name or ID */
 
-
-/* Example: This styles elements with class="header"*/
-.header {}
-
-
-/* Example: This styles an element with an id="header-img" */
-#header-img {}
-
 img {
   max-width: 50%;
   height: 50%;
@@ -164,11 +200,8 @@ h4,
 h5,
 h6 {
   font-family: 'Arial', sans-serif;
-  /* Set the font family for headings */
   font-weight: bold;
-  /* Make headings bold */
   color: #000;
-  /* Set the text color for headings */
   padding: 10px;
 }
 
