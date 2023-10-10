@@ -1,0 +1,190 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.main-title {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  color: green;
+  text-align: center;
+}
+
+body {
+
+  /* Add a background color or image */
+  background-color: white;
+  background-image: url('');
+
+  /* Customize the font, size, and color for text*/
+  font-family: Arial;
+  font-size: 16px;
+  color: black;
+
+  /* Adjust the padding and margins */
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+
+}
+
+.important {
+  background-color: lightblue;
+}
+
+#interesting {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  border: 5px black;
+  padding: 10px;
+
+
+}
+
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+a {}
+
+a:link {
+  text-decoration: none;
+  /* Remove the underline by default */
+  color: #0077cc;
+  /* Set the default link color */
+}
+
+a:visited {
+  text-decoration: none;
+  /* Remove the underline for visited links */
+  color: #551a8b;
+  /* Set the color for visited links */
+}
+
+a:hover {
+  text-decoration: underline;
+  /* Add an underline on hover */
+  color: #ff6600;
+  /* Set the hover color */
+}
+
+a:active {
+  text-decoration: underline;
+  /* Add an underline when the link is active */
+  color: #ff0000;
+  /* Set the active (click) color */
+}
+
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+ol {}
+
+ol li {}
+
+
+ul {}
+
+ul li {}
+
+
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+
+
+
+/* Select and style elements by class name or ID */
+
+
+/* Example: This styles elements with class="header"*/
+.header {}
+
+
+/* Example: This styles an element with an id="header-img" */
+#header-img {}
+
+img {
+  max-width: 50%;
+  height: 50%;
+}
+
+p {
+  font-size: 16px;
+  /* Set the font size for paragraphs */
+  line-height: 1.5;
+  /* Set the line height for paragraphs */
+  margin-bottom: 10px;
+  /* Add spacing at the bottom of paragraphs */
+  color: #000;
+  /* Set the text color for paragraphs */
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arial', sans-serif;
+  /* Set the font family for headings */
+  font-weight: bold;
+  /* Make headings bold */
+  color: #000;
+  /* Set the text color for headings */
+  padding: 10px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 9:16 aspect ratio (715 / 1271) */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
