@@ -221,3 +221,26 @@ h6 {
   top: 0;
   left: 0;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  /* Background color for the footer */
+  text-align: center;
+  color: #fff;
+  /* Text color for the footer */
+  padding: 10px;
+  /* Add padding to the footer for spacing */
+}
+
+.footer a {
+  color: #fff;
+  /* Text color for the links in the footer */
+  text-decoration: none;
+  /* Remove underlines from the links */
+  margin: 0 10px;
+  /* Add horizontal spacing between links */
+}
