@@ -4,26 +4,33 @@ html {
 }
 
 /* Header ruleset */
-.header {
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
   font-size: 24px;
   font-weight: bold;
   color: #333;
-  text-align: center;
+
   background-color: #0099cc;
+
   padding-top: 20px;
   /* Add spacing at the top of the header */
   margin-bottom: 20px;
   /* Add spacing at the bottom of the header */
 }
 
-#header-left {
+.header-item:nth-of-type(1) {
   float: left;
   width: 35%;
   background-color: #f0f0f0;
   padding: 20px;
 }
 
-#header-right {
+.header-item:nth-of-type(2) {
   float: right;
   width: 65%;
   /* Set the width to 65% (100% - 35%) */
@@ -274,28 +281,47 @@ h6 {
 
 /* General style rule set for all items in ul */
 .navbar ul {
-    list-style: none;
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  top: 0;
+  width: 100%;
+  margin-top: 0;
+  /* To evenly distribute the nav items */
+  align-items: center;
+  /* To vertically center the nav items */
+  padding: 0;
+
+
+  background-color: #0099cc;
 
 }
 
 /* Style rule set for individual li */
 .navbar ul li {
-    float: left;
-    margin: 10px;
+  font-family: Arial;
+  color: black;
+  font-size: 16px;
+  float: left;
+  margin: 10px;
+
 }
 
 
 /* Style rule set for individual li link */
 .navbar ul li a {
-    font-family: Arial;
-    color:black;
-    font-size: 16px;
-    text-decoration: none;
+  display: block;
+  font-family: Arial;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;  
+
 }
 
 /* Style rule set for hovered link */
 .navbar ul li a:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 
@@ -312,25 +338,19 @@ h6 {
 
 
 /* Style rules for flex-item 1 */
-.flex-item:nth-of-type(1) {
-
-}
+.flex-item:nth-of-type(1) {}
 
 /* Style rules for flex-item 2 */
-.flex-item:nth-of-type(2) {
-
-}
+.flex-item:nth-of-type(2) {}
 
 /* Style rules for flex-item 3 */
-.flex-item:nth-of-type(3) {
-
-}
+.flex-item:nth-of-type(3) {}
 
 
 /* Style set for all flex-items */
 .flex-item {
-    background: white;
-    color: black;
-    font-weight: bold;
-    text-align: center;
+  background: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }
