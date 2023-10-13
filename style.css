@@ -115,6 +115,13 @@ p {
   color: #333;
 }
 
+.dark-mode p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: white;
+}
+
 a {}
 
 a:link {
@@ -226,6 +233,33 @@ h6 {
 
 }
 
+.dark-mode h2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.dark-mode h3 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.dark-mode h4 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  text-align: center;
+
+}
+
 .video-container {
   position: relative;
   width: 50%;
@@ -280,12 +314,11 @@ h6 {
   list-style-type: none;
   overflow: hidden;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   /* To evenly distribute the nav items */
-  align-items: center;
   /* To vertically center the nav items */
   padding: 0;
 
@@ -329,6 +362,7 @@ h6 {
   color: white;
   /* Text color for dark mode */
 }
+
 
 
 
