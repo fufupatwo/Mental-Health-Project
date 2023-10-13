@@ -49,8 +49,8 @@ html {
 }
 
 .header-button {
-  background-color: #008CBA;
-  border: 2px solid #0077cc;
+  background-color: white;
+  border: 2px solid black;
   /* Add a border with color */
   color: white;
   font-size: 16px;
@@ -73,7 +73,8 @@ html {
 body {
 
   /* Add a background color or image */
-  background-color: white;
+  background-color: lightblue;
+
   background-image: url('');
 
   font-family: Arial;
@@ -93,12 +94,10 @@ body {
 
 }
 
-.important {
-  background-color: lightblue;
-}
+
 
 #interesting {
-  color: black;
+  color: white;
   font-size: 40px;
   font-weight: bold;
   border: 5px black;
@@ -120,7 +119,7 @@ a {}
 
 a:link {
   text-decoration: none;
-  color: #0077cc;
+  color: #008CBA;
 }
 
 a:visited {
@@ -282,9 +281,9 @@ h6 {
   overflow: hidden;
   display: flex;
   justify-content: space-around;
-  top: 0;
   width: 100%;
   margin-top: 0;
+  margin-bottom: 0;
   /* To evenly distribute the nav items */
   align-items: center;
   /* To vertically center the nav items */
@@ -310,7 +309,7 @@ h6 {
 .navbar ul li a {
   display: block;
   font-family: Arial;
-  color: black;
+  color: white;
   font-size: 16px;
   text-decoration: none;
 
@@ -334,15 +333,6 @@ h6 {
 }
 
 
-/* Style rules for flex-item 1 */
-.flex-item:nth-of-type(1) {}
-
-/* Style rules for flex-item 2 */
-.flex-item:nth-of-type(2) {}
-
-/* Style rules for flex-item 3 */
-.flex-item:nth-of-type(3) {}
-
 
 /* Style set for all flex-items */
 .flex-item {
@@ -350,4 +340,33 @@ h6 {
   color: black;
   font-weight: bold;
   text-align: center;
+}
+
+/* Add style to button */
+#theme-button {
+  background-color: white;
+  border: 2px solid black;
+  /* Add a border with color */
+  color: black;
+  /* Change text color to black */
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .header-container {
+  background-color: #111;
+  /* Darker header background color */
+  color: white;
+  /* Text color for the header in dark mode */
 }
