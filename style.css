@@ -320,6 +320,16 @@ h6 {
   font-weight: bold;
 }
 
+.dark-mode .navbar ul {
+  background-color: black;
+  /* Background color for dark mode */
+}
+
+.dark-mode .navbar ul li a {
+  color: white;
+  /* Text color for dark mode */
+}
+
 
 
 
@@ -365,7 +375,7 @@ h6 {
 }
 
 .dark-mode .header-container {
-  background-color: #111;
+  background-color: black;
   /* Darker header background color */
   color: white;
   /* Text color for the header in dark mode */
