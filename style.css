@@ -15,7 +15,7 @@ html {
   font-weight: bold;
   color: #333;
 
-  background-color: #0099cc;
+  background-color: #7fc2ca;
 
   padding-top: 20px;
   /* Add spacing at the top of the header */
@@ -46,6 +46,8 @@ html {
   /* Add left margin around the image */
   margin-right: 10px;
   /* Add right margin around the image */
+  margin-top: 100px;
+  ;
 }
 
 .header-button {
@@ -73,7 +75,7 @@ html {
 body {
 
   /* Add a background color or image */
-  background-color: lightblue;
+  background-color: #7fc2ca;
 
   background-image: url('');
 
@@ -314,6 +316,7 @@ h6 {
   list-style-type: none;
   overflow: hidden;
   display: flex;
+  position: fixed;
   justify-content: space-evenly;
   width: 100%;
   margin-top: 0;
@@ -323,7 +326,7 @@ h6 {
   padding: 0;
 
 
-  background-color: #0099cc;
+
 
 }
 
@@ -354,7 +357,7 @@ h6 {
 }
 
 .dark-mode .navbar ul {
-  background-color: black;
+
   /* Background color for dark mode */
 }
 

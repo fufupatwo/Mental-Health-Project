@@ -8,8 +8,11 @@ const toggleDarkMode = () => {
   document.body.classList.toggle("dark-mode");
 
 }
-
+themeButton.addEventListener("click", toggleDarkMode);
 
 // TODO: Register a 'click' event listener for the theme button
 // Set toggleDarkMode as the callback function.
-themeButton.addEventListener("click", toggleDarkMode);
+
+
+
+
