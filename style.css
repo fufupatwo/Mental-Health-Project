@@ -94,6 +94,8 @@ body {
   margin-right: 0;
   margin-bottom: 0;
 
+  cursor: none;
+
 }
 
 
@@ -104,6 +106,8 @@ body {
   font-weight: bold;
   border: 5px black;
   padding: 10px;
+  line-height: 1.5;
+  -webkit-text-stroke: 1px black;
 
 
 }
@@ -229,9 +233,14 @@ h5,
 h6 {
   font-family: 'Arial', sans-serif;
   font-weight: bold;
-  color: #000;
+  color: white;
   padding: 10px;
   text-align: center;
+  position: relative;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+
+  font-size: 24px;
+
 
 }
 
@@ -332,9 +341,9 @@ h6 {
 
 /* Style rule set for individual li */
 .navbar ul li {
-  font-family: Arial;
+  font-family: Raleway;
   color: black;
-  font-size: 16px;
+  font-size: 20px;
   float: left;
   margin: 10px;
 
@@ -344,9 +353,9 @@ h6 {
 /* Style rule set for individual li link */
 .navbar ul li a {
   display: block;
-  font-family: Arial;
+  font-family: Raleway;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
 
 }
@@ -416,4 +425,43 @@ h6 {
   /* Darker header background color */
   color: white;
   /* Text color for the header in dark mode */
+}
+
+.cursor {
+
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999;
+}
+
+.circle {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
 }
