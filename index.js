@@ -13,6 +13,39 @@ themeButton.addEventListener("click", toggleDarkMode);
 // TODO: Register a 'click' event listener for the theme button
 // Set toggleDarkMode as the callback function.
 
+let count = 3;
+
+document.addEventListener("DOMContentLoaded", function(){
+  // Add your query for the sign now button here
+  let signNowButton = document.getElementById("sign-now-button");
+
+  const addSignature = () => {
+    // Write your code to manipulate the DOM here
+    let name = document.getElementById("name").value;
+    let hometown = document.getElementById("hometown").value;
+    let signatures = document.querySelector(".signatures");
+    let email = document.getElementById("email").value;
+    let newSignature = document.createElement("p");
+
+    newSignature.textContent = "️🖊️ " + name + " from " + hometown + " supports this";
+    signatures.appendChild(newSignature);
+
+    const oldCounter = document.getElementById("counter");
+    oldCounter.remove();
+
+    count = count + 1;
+
+    const newCounter = document.createElement("p");
+    newCounter.id = "counter";
+    newCounter.textContent = "🖊️ " + count + " people have signed this petition and support this cause.";
+
+    signatures.appendChild(newCounter); // Corrected from "signature" to "signatures"
+  }
+
+  signNowButton.addEventListener("click", addSignature);
+
+  // Add a click event listener to the sign now button here
+});
 
 
 
