@@ -326,25 +326,22 @@ h6 {
   overflow: hidden;
   display: flex;
   position: fixed;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  /* Change justify-content value to flex-start */
+  align-items: center;
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
-  /* To evenly distribute the nav items */
-  /* To vertically center the nav items */
   padding: 0;
-
-
-
-
 }
 
 /* Style rule set for individual li */
 .navbar ul li {
+  float: left;
   font-family: Raleway;
   color: black;
   font-size: 20px;
-  float: left;
+
   margin: 10px;
 
 }
@@ -365,10 +362,6 @@ h6 {
   font-weight: bold;
 }
 
-.dark-mode .navbar ul {
-
-  /* Background color for dark mode */
-}
 
 .dark-mode .navbar ul li a {
   color: white;
@@ -464,4 +457,12 @@ h6 {
 .signatures {
   width: 45%;
   padding-right: 10px;
+}
+
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
 }
