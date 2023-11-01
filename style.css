@@ -58,9 +58,8 @@ html {
   font-size: 16px;
   text-align: center;
   padding: 10px 20px;
-
   margin: 5px;
-
+  border-radius: 10px;
   cursor: pointer;
 
 }
@@ -464,5 +463,48 @@ h6 {
   border-style: solid;
   border-width: 2px;
   border-color: red;
-  background:pink;
+  background: pink;
+}
+
+
+.sign-now-button {
+  background-color: white;
+  border: 2px solid black;
+  /* Add a border with color */
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.petition h2 {
+  text-align: left;
+}
+
+.about-container {
+  display: flex;
+}
+
+.left-content {
+  flex: 1;
+  padding: 20px;
+  /* Add padding as needed */
+  /* You can also add a background color or other styling for the left content */
+}
+
+.right-content {
+  flex: 1;
+  padding: 20px;
+  /* Add padding as needed */
+}           
+
+
+
+.action {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }

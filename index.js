@@ -17,6 +17,7 @@ let count = 3;
 
 document.addEventListener("DOMContentLoaded", function(){
   // Add your query for the sign now button here
+  const email = document.getElementById('email');
   let signNowButton = document.getElementById("sign-now-button");
 
   const addSignature = () => {
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let signatures = document.querySelector(".signatures");
     let email = document.getElementById("email").value;
     let newSignature = document.createElement("p");
+    
 
     newSignature.textContent = "️🖊️ " + name + " from " + hometown + " supports this";
     signatures.appendChild(newSignature);
@@ -62,6 +64,14 @@ document.addEventListener("DOMContentLoaded", function(){
           }
 
       }
+    let email = document.getElementById('email');
+    if (!email.value.includes('.com')) {
+      email.classList.add('error');
+      containsErrors = true;
+    } else {
+      email.classList.remove('error');
+    }
+
 
     // TODO: Validate the value of each input
     if(containsErrors == false)
@@ -82,6 +92,45 @@ document.addEventListener("DOMContentLoaded", function(){
 
   // Add a click event listener to the sign now button here
 });
+
+
+
+
+
+let animation = {
+  revealDistance : 150,
+  initialOpacity : 0,
+  transitionDelay : 0,
+  transitionDuration : '2s',
+  transitionProperty : 'all',
+  transitionTimingFunction : 'ease'
+}
+
+let revealableContainers = document.querySelectorAll(".revealable");
+
+const reveal = () => {
+  for(let i = 0; i < revealableContainers.length; i++)
+    {
+      let windowHeight = window.innerHeight;
+      
+      let topOfRevealableContainer = revealableContainers[i].getBoundingClientRect().top;  
+
+      if(topOfRevealableContainer < windowHeight - animation.revealDistance){
+        revealableContainers[i].classList.add("active");
+      }
+      else{
+        revealableContainers[i].classList.remove("active");
+      }
+
+}
+  window.addEventListner('scroll', reveal);
+}
+
+
+
+
+
+
 
 
 
@@ -136,3 +185,6 @@ function animateCircles() {
 }
 
 animateCircles();
+
+
+
