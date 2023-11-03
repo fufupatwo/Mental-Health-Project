@@ -499,12 +499,17 @@ h6 {
   flex: 1;
   padding: 20px;
   /* Add padding as needed */
-}           
+}
 
 
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
 
-.action {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+.revealable.active {
+  opacity: 1;
+  transform: translateY(0px);
 }

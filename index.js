@@ -15,7 +15,7 @@ themeButton.addEventListener("click", toggleDarkMode);
 
 let count = 3;
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function() {
   // Add your query for the sign now button here
   const email = document.getElementById('email');
   let signNowButton = document.getElementById("sign-now-button");
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let signatures = document.querySelector(".signatures");
     let email = document.getElementById("email").value;
     let newSignature = document.createElement("p");
-    
+
 
     newSignature.textContent = "️🖊️ " + name + " from " + hometown + " supports this";
     signatures.appendChild(newSignature);
@@ -51,19 +51,16 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var petitionInputs = document.getElementById("sign-petition").elements;
     // TODO: Loop through all inputs
-    for(let i =0; i < petitionInputs.length; i++)
-      {
-          if(petitionInputs[i].value.length < 2)
-          {
-            petitionInputs[i].classList.add('error');
-            containsErrors = true;
-          }
-          else
-          {
-            petitionInputs[i].classList.remove('error');
-          }
-
+    for (let i = 0; i < petitionInputs.length; i++) {
+      if (petitionInputs[i].value.length < 2) {
+        petitionInputs[i].classList.add('error');
+        containsErrors = true;
       }
+      else {
+        petitionInputs[i].classList.remove('error');
+      }
+
+    }
     let email = document.getElementById('email');
     if (!email.value.includes('.com')) {
       email.classList.add('error');
@@ -74,14 +71,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
     // TODO: Validate the value of each input
-    if(containsErrors == false)
-    {
+    if (containsErrors == false) {
       addSignature();
-      for(let i =0; i < petitionInputs.length; i++)
-        {
-          petitionInputs[i].value = "";
-          containsErrors = false;
-        }
+      for (let i = 0; i < petitionInputs.length; i++) {
+        petitionInputs[i].value = "";
+        containsErrors = false;
+      }
     }
 
     // TODO: Call addSignature() and clear fields if no errors
@@ -97,36 +92,35 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+
 let animation = {
-  revealDistance : 150,
-  initialOpacity : 0,
-  transitionDelay : 0,
-  transitionDuration : '2s',
-  transitionProperty : 'all',
-  transitionTimingFunction : 'ease'
+  revealDistance: 150,
+  initialOpacity: 0,
+  transitionDelay: 0,
+  transitionDuration: '2s',
+  transitionProperty: 'all',
+  transitionTimingFunction: 'ease'
 }
 
 let revealableContainers = document.querySelectorAll(".revealable");
 
 const reveal = () => {
-  for(let i = 0; i < revealableContainers.length; i++)
-    {
-      let windowHeight = window.innerHeight;
-      
-      let topOfRevealableContainer = revealableContainers[i].getBoundingClientRect().top;  
+  for (let i = 0; i < revealableContainers.length; i++) {
+    let windowHeight = window.innerHeight;
 
-      if(topOfRevealableContainer < windowHeight - animation.revealDistance){
-        revealableContainers[i].classList.add("active");
-      }
-      else{
-        revealableContainers[i].classList.remove("active");
-      }
+    let topOfRevealableContainer = revealableContainers[i].getBoundingClientRect().top;
+
+    if (topOfRevealableContainer < windowHeight - animation.revealDistance) {
+      revealableContainers[i].classList.add("active");
+    }
+    else {
+      revealableContainers[i].classList.remove("active");
+    }
+
+  }
 
 }
-  window.addEventListner('scroll', reveal);
-}
-
-
+window.addEventListener('scroll', reveal);
 
 
 
