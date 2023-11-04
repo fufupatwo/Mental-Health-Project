@@ -123,7 +123,23 @@ const reveal = () => {
 window.addEventListener('scroll', reveal);
 
 
+function reduceMotion() {
+  animation.transitionDuration = '0s';
+  animation.transitionDelay = '0s';
+  animation.transitionProperty = 'none';
+  animation.initialOpacity = 1;
+  animation.transitionTimingFunction = 'ease';
 
+  for (let i = 0; i < revealableContainers.length; i++) {
+    revealableContainers[i].style.transitionDuration = animation.transitionDuration;
+    revealableContainers[i].style.transitionDelay = animation.transitionDelay;
+    revealableContainers[i].style.transitionProperty = animation.transitionProperty;
+    revealableContainers[i].style.opacity = animation.initialOpacity;
+    revealableContainers[i].style.transitionTimingFunction = animation.transitionTimingFunction;
+  }
+}
+const reduceMotionButton = document.getElementById("toggle-motion");
+reduceMotionButton.addEventListener("click", reduceMotion);
 
 
 
