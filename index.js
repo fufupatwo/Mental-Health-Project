@@ -121,8 +121,6 @@ const reveal = () => {
 
 }
 window.addEventListener('scroll', reveal);
-
-
 function reduceMotion() {
   animation.transitionDuration = '0s';
   animation.transitionDelay = '0s';

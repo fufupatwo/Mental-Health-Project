@@ -405,6 +405,14 @@ h6 {
   cursor: pointer;
 }
 
+#theme-button:hover {
+  font-weight: bold;
+}
+
+#theme-button:active {
+  background-color: #008CBA;
+  color: white;
+}
 
 
 /* Customize Dark Mode Theme */
@@ -520,4 +528,24 @@ h6 {
   transition-delay: 0s;
   transition-property: none;
   opacity: 1;
+}
+
+#toggle-motion {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#toggle-motion:hover {
+  font-weight: bold;
+}
+
+#toggle-motion:active {
+  background-color: #008CBA;
+  color: white;
 }
