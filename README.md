@@ -66,10 +66,15 @@ Here's a walkthrough of implemented features:
 <!-- Replace this with whatever GIF tool you used! -->
 GIFs created with LICEcap
 
+Regular scrolling of my website:
 ![regscroll](https://github.com/fufupatwo/Mental-Health-Project/assets/114861274/5233ddb8-2821-4672-a40e-20d4fab2cb49)
 
+
+Enabling darkmode scrolling of my website:
 ![darkscroll](https://github.com/fufupatwo/Mental-Health-Project/assets/114861274/e6c68865-c63c-40b7-9113-f2257959b3ae)
 
+
+Showing my form validation with different inputs + error handling:
 ![formValidation](https://github.com/fufupatwo/Mental-Health-Project/assets/114861274/0ac61c45-acf1-4831-91d4-d5ed3e500d74)
 
 <!-- Recommended tools:
