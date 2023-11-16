@@ -79,9 +79,11 @@ GIFs created with LICEcap
 
 
 
-## Project Overview
+## Reflection 
 
 I initiated this project with the primary goal of deepening my grasp of vanilla HTML, CSS, and JavaScript. Serving as an excellent mini project, it has provided me with a solid foundation to confidently embark on learning React. Now equipped with fundamental skills, I am ready to take on React and further enhance my web development capabilities.
+
+One thing I could add in the future is a database to store my user information.
 
 --- 
 
