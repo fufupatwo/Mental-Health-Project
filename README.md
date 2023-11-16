@@ -8,8 +8,6 @@ Submitted by: **Aaron Delgado**
 
 
 
-Certainly! Here's the README in past tense, reflecting the features you implemented:
-
 ---
 
 ## Project Description
