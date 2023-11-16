@@ -459,6 +459,7 @@ h6 {
 .petition-para {
   width: 55%;
   padding-right: 10px;
+  padding-left: 10px;
 
 }
 
@@ -476,7 +477,7 @@ h6 {
 }
 
 
-.sign-now-button {
+#sign-now-button {
   background-color: white;
   border: 2px solid black;
   /* Add a border with color */
@@ -548,4 +549,111 @@ h6 {
 #toggle-motion:active {
   background-color: #008CBA;
   color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  /* Align to the left */
+  align-items: center;
+  /* Align vertically in the middle */
+  height: 50vh;
+  /* Adjust the height as needed */
+  padding: 20px;
+  /* Add padding for spacing */
+}
+
+.impact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: left;
+  /* Align text to the left */
+  margin-right: auto;
+  /* Push it to the left by setting margin-right to auto */
+  height: 300px;
+  /* Set a fixed height for the container */
+  overflow: auto;
+  /* Add scrollbars when content overflows the fixed height */
+}
+
+.impact-container h2 {
+  text-align: left;
+  /* Align the heading to the left */
+}
+
+.impact-container-one {
+
+  font-size: 16px;
+  /* Set the font size */
+
+  /* Adjust the margin between paragraphs */
+  max-width: 600px;
+  /* Set a maximum width for the text */
+}
+
+.impact-container-two {
+  font-size: 16px;
+  /* Set the font size */
+
+  /* Adjust the margin between paragraphs */
+  max-width: 600px;
+  /* Set a maximum width for the text */
+}
+
+.impact-container-three {
+  font-size: 16px;
+  /* Set the font size */
+
+  /* Adjust the margin between paragraphs */
+  max-width: 600px;
+  /* Set a maximum width for the text */
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none;
+  /* hides the modal from view by default*/
+  position: fixed;
+  /* keeps the modal in one place */
+  z-index: 2;
+  /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 40% opacity black - other elements can still be seen */
+  flex-direction: column;
+  /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue;
+  /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem;
+  /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex;
+  /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

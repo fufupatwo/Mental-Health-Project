@@ -20,16 +20,18 @@ document.addEventListener("DOMContentLoaded", function() {
   const email = document.getElementById('email');
   let signNowButton = document.getElementById("sign-now-button");
 
-  const addSignature = () => {
+  const addSignature = (person) => {
     // Write your code to manipulate the DOM here
-    let name = document.getElementById("name").value;
-    let hometown = document.getElementById("hometown").value;
+
+    /* let name = document.getElementById("name").value;
+     let hometown = document.getElementById("hometown").value;
+     let email = document.getElementById("email").value;
+     */
     let signatures = document.querySelector(".signatures");
-    let email = document.getElementById("email").value;
     let newSignature = document.createElement("p");
 
 
-    newSignature.textContent = "️🖊️ " + name + " from " + hometown + " supports this";
+    newSignature.textContent = `🖊️ ${person.name} from ${person.hometown} supports this`;
     signatures.appendChild(newSignature);
 
     const oldCounter = document.getElementById("counter");
@@ -39,9 +41,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const newCounter = document.createElement("p");
     newCounter.id = "counter";
-    newCounter.textContent = "🖊️ " + count + " people have signed this petition and support this cause.";
+    newCounter.textContent = `🖊️ ${count} people have signed this petition and support this cause.`;
 
     signatures.appendChild(newCounter); // Corrected from "signature" to "signatures"
+    toggleModal(person);
   }
 
 
@@ -50,9 +53,14 @@ document.addEventListener("DOMContentLoaded", function() {
     let containsErrors = false;
 
     var petitionInputs = document.getElementById("sign-petition").elements;
+    let person = {
+      name: petitionInputs[0].value, // accesses and saves value of first input
+      hometown: petitionInputs[1].value, // accesses and saves value of second input
+      email: petitionInputs[2].value // accesses and saves value of third input
+    }
     // TODO: Loop through all inputs
     for (let i = 0; i < petitionInputs.length; i++) {
-      if (petitionInputs[i].value.length < 2) {
+      if (person.hometown.length < 2) {
         petitionInputs[i].classList.add('error');
         containsErrors = true;
       }
@@ -72,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // TODO: Validate the value of each input
     if (containsErrors == false) {
-      addSignature();
+      addSignature(person);
       for (let i = 0; i < petitionInputs.length; i++) {
         petitionInputs[i].value = "";
         containsErrors = false;
@@ -195,4 +203,27 @@ function animateCircles() {
 animateCircles();
 
 
+let scaleFactor = 1;
+let modalImage = document.getElementById("modal-image");
+let intervalId = null; // Initialize intervalId to null
 
+const scaleImage = () => {
+  scaleFactor = scaleFactor === 1 ? 0.8 : 1;
+  modalImage.style.transform = `scale(${scaleFactor})`;
+};
+
+function toggleModal(person) {
+  let modal = document.getElementById("thanks-modal");
+  let modalContent = document.getElementById("modal-text-container");
+
+  modal.style.display = "flex";
+
+  modalContent.textContent = `Thank you so much ${person.name} for signing the petition! ${person.hometown} represent!`;
+
+  setTimeout(() => {
+    modal.style.display = "none";
+    clearInterval(intervalId);
+  }, 4000);
+
+  intervalId = setInterval(scaleImage, 500); // Now assign the intervalId
+}
