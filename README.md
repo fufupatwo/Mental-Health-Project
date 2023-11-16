@@ -64,7 +64,14 @@ Here's a walkthrough of implemented features:
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIFs created with LICEcap
+
+![regscroll](https://github.com/fufupatwo/Mental-Health-Project/assets/114861274/5233ddb8-2821-4672-a40e-20d4fab2cb49)
+
+![darkscroll](https://github.com/fufupatwo/Mental-Health-Project/assets/114861274/e6c68865-c63c-40b7-9113-f2257959b3ae)
+
+![formValidation](https://github.com/fufupatwo/Mental-Health-Project/assets/114861274/0ac61c45-acf1-4831-91d4-d5ed3e500d74)
+
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
