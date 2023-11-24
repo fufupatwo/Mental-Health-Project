@@ -12,7 +12,7 @@ Submitted by: **Aaron Delgado**
 
 ## Project Description
 
-Throughout this project I was able to succesfully:
+Throughout this project I was able to successfully:
 
 ### HTML and CSS Basics:
 - Created and structured an HTML document using elements, tags, and attributes.
